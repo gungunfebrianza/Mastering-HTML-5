@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A form with a password field that must contain 6 or more characters:</p>
+
+<form action="/action_page.php">
+  Password: <input type="password" name="pw" pattern=".{6,}" title="Six or more characters">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+</body>
+</html>

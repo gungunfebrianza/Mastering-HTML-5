@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A form with a password field that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter:</p>
+
+<form action="/action_page.php">
+Password: <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+<input type="submit">
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+</body>
+</html>

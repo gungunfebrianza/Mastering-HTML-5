@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form action="/action_page.php" method="get" id="nameform">
+    First name: <input type="text" name="fname"><br> Last name: <input type="text" name="lname"><br>
+  </form>
+
+  <p>The button below is outside the form element, but still part of the form.</p>
+
+  <button type="submit" form="nameform" value="Submit">Submit</button>
+
+  <p><b>Note:</b> The form attribute does not work in IE.</p>
+</body>
+</html>

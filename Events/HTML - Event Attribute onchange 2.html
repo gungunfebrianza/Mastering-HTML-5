@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>onCHange Effect</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+Masukan ID:
+<input type="text" name="txt" id="test" value="" >
+<hr>
+Saldo ID <input type="text" id="saldo" name="" value="">
+<hr>
+<br>
+<button>Tampilkan Nilainya</button>
+<button id="isisaldo" >Isi saldo</button>
+
+
+</body>
+<script>
+$(document).ready(function(){
+    $("#isisaldo").click(function(){
+      var idcard = $("#test").val();
+      alert("ID " + idcard.toString() + " Telah dikenali");
+    });
+
+    $("#test").on('change', function(event) {
+      var saldo = $("#test").val();
+              alert("NIlainya adalah: " + saldo);
+    });
+});
+</script>
+</html>
