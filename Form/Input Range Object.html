@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Range Object</title>
+  </head>
+  <body>
+    <h3>A demonstration of how to access a Slider Control</h3>
+
+    <input type="range" id="myRange" value="90">
+
+    <p>Click the button to get the value of the slider control.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p><strong>Note:</strong> input elements with type="range" are not supported in IE 9 and earlier versions.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myRange").value;
+        document.getElementById("demo").innerHTML = x;
+    }
+    </script>
+  </body>
+</html>
