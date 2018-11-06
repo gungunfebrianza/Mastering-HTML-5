@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Range Method Stepup</title>
-  </head>
-  <body>
-    Points: <input type="range" id="myRange" value="60">
 
-    <p>Click the button to increment the value of the slider control by "10" (each time you click).</p>
+<head>
+  <meta charset="utf-8">
+  <title>Range Method Stepup</title>
+</head>
 
-    <button onclick="myFunction()">Try it</button>
+<body>
+  Points: <input type="range" id="myRange" value="60">
 
-    <script>
-      function myFunction() {
-        document.getElementById("myRange").stepUp(10);
-      }
-    </script>
-  </body>
+  <p>Click the button to increment the value of the slider control by "10" (each time you click).</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myRange").stepUp(10);
+    }
+  </script>
+</body>
+
 </html>
